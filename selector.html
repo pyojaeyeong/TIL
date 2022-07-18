@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>selector</title>
+    <style>
+        ul li{      /*ul밑에 있는 li*/
+            color: red;
+        }
+        #list>li{    /*list의 직계자손인 li*/
+            border: 1px solid red;
+            color: blue;
+        }
+        ul, ol{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol id="list">
+        <li>HTML</li>
+        <li>CSS
+            <ol>
+                <li>selector</li>
+                <li>daclaration</li>
+            </ol>
+        </li>
+        <li>JavaScript</li>
+    </ol>
+</body>
+</html>
