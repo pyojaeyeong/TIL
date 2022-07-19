@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>input 유형</title>
+    </head>
+    <body>
+        <div>
+            <p>
+                성별
+                <label for="man">남자</label>
+                <input type="radio" id="man" value="man" checked>
+                <label for="women">여자</label>
+                <input type="radio" id="women" value="women">
+            </p>
+        </div>
+        <div>
+            <p>
+                음식
+                <label for="chicken">치킨</label>
+                <input type="checkbox" id="chicken">
+                <label for="pizza">피자</label>
+                <input type="checkbox" id="pizza">
+            </p>
+        </div>
+        <div>
+            <label for="colors">colors</label>
+            <input type="color" id="colors" value="#e66465">
+        </div>
+        <br>
+        <div>
+            <label for="start">date</label>
+            <input
+                type="date"
+                id="start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2022-12-31">
+        </div>
+        <br>
+        <div>
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="11">
+        </div>
+    </body>
+</html>
