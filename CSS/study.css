@@ -1,0 +1,52 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    border: 5px solid orange;
+}
+ul li {
+    /*ul밑에 있는 li*/
+    color: red;
+}
+#list > li {
+    /*list의 직계자손인 li*/
+    color: blue;
+}
+ol,
+ul {
+    background-color: pink;
+}
+p {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+
+}
+a {
+    text-align: center;
+    font-size: 2rem;
+}
+a:link {
+    /* 방문한 적이 없는 링크*/
+    color: blue;
+}
+a:visited {
+    /*방문한 적이 있는 링크*/
+    color: red;
+}
+a:hover {
+    /*마우스 올렸을 때*/
+    color: yellow;
+}
+a:active {
+    /*마우스를 클릭했을 때*/
+    color: black;
+}
+#lorem {
+    font-size: 1rem;
+    text-align: justify;
+    border: 1px solid black;
+    line-height: 2;
+}
