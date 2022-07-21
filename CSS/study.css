@@ -2,51 +2,57 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-h1 {
+h1, a { /*그룹 선택자*/
     text-align: center;
-    border: 5px solid orange;
 }
-ul li {
-    /*ul밑에 있는 li*/
+ul li {     /*후손 선택자*/
     color: red;
 }
-#list > li {
-    /*list의 직계자손인 li*/
+#list > li {    /*자손 선택자*/
     color: blue;
 }
-ol,
-ul {
-    background-color: pink;
+ul, ol {
+    background-color: powderblue;
 }
 p {
-    text-align: center;
+    text-align: justify;
     color: black;
-    font-size: 2rem;
-
+    font-size: 1rem;
 }
-a {
+nav {
     text-align: center;
     font-size: 2rem;
 }
-a:link {
-    /* 방문한 적이 없는 링크*/
+/* 링크 선택자 */
+a:link {        /* 방문한 적이 없는 링크*/
     color: blue;
 }
-a:visited {
-    /*방문한 적이 있는 링크*/
+a:visited {     /*방문한 적이 있는 링크*/
     color: red;
 }
-a:hover {
-    /*마우스 올렸을 때*/
+/* 반응 선택자 */
+a:hover {       /*마우스 올렸을 때*/
     color: yellow;
 }
-a:active {
-    /*마우스를 클릭했을 때*/
+a:active {      /*마우스를 클릭했을 때*/
     color: black;
 }
-#lorem {
-    font-size: 1rem;
+article {
     text-align: justify;
-    border: 1px solid black;
+    border: 2px solid black;
     line-height: 2;
+    overflow: hidden;   /*영역 내부의 범위를 벗어날 때의 처리*/
+    position: relative; /*위치 속성: 초기위치에서 이동*/
+    height: 150px;
+}
+/* 속성 선택자 */
+input[type=checkbox]:checked + article{
+    height: 0px;
+}
+#content, #start{
+    /* 중앙 정렬 */
+    width: 960px;
+    margin: 0 auto;
+    /* 수평 레이아웃 구성 */
+    overflow: hidden;
 }

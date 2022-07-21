@@ -3,24 +3,24 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>html+css 태그</title>
+        <title>html, css 태그</title>
         <link rel="stylesheet" href="/CSS/study.css">
     </head>
 
     <body>
-        <div>
-            <h1>HTML+CSS 태그 학습</h1>
-        </div>
-        <div>
+        <header>
+            <h1>HTML, CSS 태그 학습</h1>
+        </header>
+        <div id="start">
             <h2>목차</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
             </ul>
-            <ol id="list">
+            <ol>
                 <li>HTML</li>
                 <li>CSS</li>
-                <ol>
+                <ol id="list">
                     <li>selector</li>
                     <li>declaration</li>
                     <li>pseodo class selector</li>
@@ -29,26 +29,47 @@
         </ol>
     </div>
     <div>
-        <p>가상 클래스 선택자(pseodo class selector)</p>
-        <a href="https://www.google.co.kr/">Google</a>
-        <a href="https://www.naver.com/" target="_blank">Naver</a>
-        <a href="https://www.youtube.com/">Youtube</a>
+        <header>
+            <h1>가상 클래스 선택자(pseodo class selector)</h1>
+        </header>
+        <nav>
+            <a href="https://www.google.co.kr/">Google</a>
+            <a href="https://www.naver.com/" target="_blank">Naver</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+        </nav>
     </div>
-    <div>
-        <p>lorem ipsum</p>
-        <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            urna sapien, blandit ac luctus ac, consectetur eu mi. In lectus ex, finibus quis
-            semper eget, tincidunt nec metus. Nunc id scelerisque nibh. Proin tristique
-            justo nec odio sagittis, sed cursus purus iaculis. Praesent quis laoreet risus.
-            Vivamus vitae elit sit amet neque porta dapibus in vitae odio. Integer porta dui
-            et ante vehicula, aliquam commodo elit vehicula. Donec vestibulum augue nec
-            suscipit accumsan.</p>
-        <br>
-        <a
-            href="https://www.fontreach.com/#top"
-            target="_blank"
-            rel="noopener noreferrer">폰트 랭킹</a>
-    </div>
+    <!-- 여러 중심 내용을 감싸는 공간 -->
+    <section id="content">
+        <header>
+            <h2>lorem ipsum</h2>
+        </header><hr>
+        <label for="p">체크를 누르면 문장이 사라집니다.</label>
+        <input type="checkbox" id="lorem">
+        <!-- 글자가 많이 들어가는 부분 -->
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+                accumsan velit. Nunc vehicula augue nec orci sollicitudin, non pretium elit
+                suscipit. Duis cursus ut turpis sed dapibus. Pellentesque non quam tincidunt,
+                laoreet lacus eu, scelerisque tellus. Aliquam a nunc eu urna ultricies finibus
+                sed nec sapien. Cras eget magna efficitur, interdum diam non, egestas felis.
+                Aenean porta velit vel luctus porttitor.</p>
+        </article>
+        <article>
+            <p>Fusce egestas sapien a nunc auctor aliquet vel eu sem. Ut faucibus nec turpis
+                at ultricies. Maecenas et fermentum urna. Nam pellentesque placerat gravida.
+                Etiam magna libero, iaculis ac scelerisque egestas, ullamcorper sed nibh. Nullam
+                in quam feugiat, eleifend magna sodales, consequat ligula. Nam libero leo,
+                iaculis sed scelerisque id, vehicula eget nibh.</p>
+        </article>
+        <article>
+            <p>Mauris tristique magna vitae quam egestas accumsan. Phasellus rutrum
+                consectetur mi vitae bibendum. Sed molestie pharetra ullamcorper. Morbi et augue
+                felis. Vivamus imperdiet velit id vehicula mollis. Sed at diam tortor. Phasellus
+                non nisi consequat, ultricies ex quis, consequat leo. Morbi posuere nisi justo,
+                tristique commodo mauris sollicitudin vitae.</p>
+        </article>
+        <hr>
+    </section>
 </body>
 
 </html>

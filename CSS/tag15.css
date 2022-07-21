@@ -1,0 +1,56 @@
+html {
+    width: 960px;
+    height: 2000px;
+    margin: 0 auto;
+    overflow: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+blockquote {
+    font-weight: bold;
+    font-size: 2rem;
+}
+p {
+    text-align: left;
+}  
+#lorem::before {
+    content: 'Start';
+    background-color: beige;
+    color: black;
+    margin: 1px;
+    padding: 1px;
+    border-radius: 5px;
+}
+#lorem::after {
+    content: 'End';
+    background-color: beige;
+    color: black;
+    margin: 1px;
+    padding: 1px;
+    border-radius: 5px;
+}
+#userid:focus{
+    background-color: beige;
+}
+#passwd:focus{
+    background-color: beige;
+}
+#title:disabled{
+    background-color: whitesmoke;
+}
+#title:enabled{
+    background-color: white;
+}
+h2:first-child{
+    text-decoration: underline;
+}
+ul>li:last-child{
+    color: gray;
+}
+footer {
+    float: right;
+}
+#list, #lorem{
+    width: 49%;
+    display: inline-flex;
+}
