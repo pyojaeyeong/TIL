@@ -2,7 +2,9 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <!-- 인터넷 익스플로러(이하 IE)의 렌더링 엔진을 강제로 최신 렌더링 엔진으로 지정 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 기기의 화면 너비에 맞추기 위해 사용하는 메타데이터 태그 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="/CSS/tag15.css">
@@ -57,22 +59,25 @@
                     <li>:last-child 속성</li>
                 </ul>
         </ol>
-        </div>
-        <div id="lorem">
+    </div>
+    <div id="lorem">
+        <!-- 출처에서 인용한 문단 단위의 텍스트를 작성할 때 사용한다 이때 출처가 확실한 인용문은 cite속성으로 출처 경로를 명시한다 -->
         <blockquote cite="https://www.lipsum.com/">lorem ipsum</blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            porta mauris eget elementum ornare. Quisque nunc quam, viverra nec pharetra et,
-            congue et diam. In hac habitasse platea dictumst. Aenean eu est ac mauris
-            finibus lobortis. Nam interdum orci libero, et tempus dolor congue id. Phasellus
-            quis dolor ac felis iaculis bibendum. Vestibulum faucibus est id dapibus
-            faucibus. Pellentesque faucibus non felis non ullamcorper. Sed ullamcorper,
-            lacus vitae commodo vestibulum, est odio commodo nibh, eu suscipit sapien libero
-            sit amet mauris. Curabitur accumsan, mauris nec volutpat tempus, ligula nisl
-            pharetra quam, ut congue diam nisl sit amet turpis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta mauris
+            eget elementum ornare. Quisque nunc quam, viverra nec pharetra et, congue et
+            diam. In hac habitasse platea dictumst. Aenean eu est ac mauris finibus
+            lobortis. Nam interdum orci libero, et tempus dolor congue id. Phasellus quis
+            dolor ac felis iaculis bibendum. Vestibulum faucibus est id dapibus faucibus.
+            Pellentesque faucibus non felis non ullamcorper. Sed ullamcorper, lacus vitae
+            commodo vestibulum, est odio commodo nibh, eu suscipit sapien libero sit amet
+            mauris. Curabitur accumsan, mauris nec volutpat tempus, ligula nisl pharetra
+            quam, ut congue diam nisl sit amet turpis.</p>
     </div>
     <form action="#" method="post">
         <div>
+            <!-- form태그 안에 상호작용 요소를 그룹 지을 수 있다 -->
             <fieldset>
+                <!-- 그룹에 이름을 붙일 수 있다 -->
                 <legend>로그인</legend>
                 <p>
                     <label for="userid">아이디</label>
@@ -89,9 +94,11 @@
                 <legend>메모장</legend>
                 <p>
                     <label for="title">제목</label>
+                    <!-- 상호작용 요소를 비활성화 한다 -->
                     <input type="text" id="title" name="title" disabled="disabled">
                 </p>
                 <label for="desc">글쓰기
+                    <!-- 여러 줄의 입력 요소를 생성할 때 사용한다 -->
                     <textarea id="desc" name="desc" maxlength="300"></textarea>
                 </label>
             </fieldset>
@@ -122,7 +129,7 @@
             </p>
             <p>
                 <label for="man">남자</label>
-                <input type="radio" id="man" name="man" checked="checked">
+                <input type="radio" id="man" name="man">
                 <label for="women">여자</label>
                 <input type="radio" id="women" name="women">
             </p>
@@ -132,13 +139,17 @@
             </p>
             <p>
                 <label for="add">주소</label>
+                <!-- 콤보박스를 생성할 수 있다 -->
                 <select name="add" id="add">
+                    <!-- 항목을 그룹으로 묶을 때 사용한다 -->
                     <optgroup label="서울시">
+                        <!-- 항목을 추가할 때 사용한다 -->
                         <option value="강남구">강남구</option>
                         <option value="서초구">서초구</option>
                         <option value="성동구">성동구</option>
                         <option value="용산구">용산구</option>
-                        <option value="동대문구" selected>동대문구</option>
+                        <!-- 콤보박스는 첫 번째 option 태그의 값이 기본 상태로 표시되는데 기본 선택 항목을 변경할 수 있다 -->
+                        <option value="동대문구" selected="selected">동대문구</option>
                     </optgroup>
                 </select>
             </p>
@@ -148,6 +159,7 @@
             </p>
         </fieldset>
     </form>
+    <!-- 푸터 영역. 저작권 정보, 연락처, 사이트 맵 등의 요소들을 포함한다 -->
     <footer>감사합니다</footer>
 </body>
 </html>

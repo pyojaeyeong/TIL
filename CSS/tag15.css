@@ -13,6 +13,7 @@ blockquote {
 p {
     text-align: left;
 }  
+/* 콘텐츠 앞의 공간을 선택한다 */
 #lorem::before {
     content: 'Start';
     background-color: beige;
@@ -21,6 +22,7 @@ p {
     padding: 1px;
     border-radius: 5px;
 }
+/* 콘텐츠 뒤의 공간을 선택한다 */
 #lorem::after {
     content: 'End';
     background-color: beige;
@@ -29,25 +31,31 @@ p {
     padding: 1px;
     border-radius: 5px;
 }
+/* 입력 요소에 커서가 활성화되면 선택자로 지정한다 */
 #userid:focus{
     background-color: beige;
 }
 #passwd:focus{
     background-color: beige;
 }
+/* 상호작용 요소가 비활성화되면 선택자로 지정한다 */
 #title:disabled{
     background-color: whitesmoke;
 }
+/* 상호작용 요소가 활성화되면 선택자로 지정한다 */
 #title:enabled{
     background-color: white;
 }
+/* 요소의 첫 번째 자식 요소를 선택자로 지정한다 */
 h2:first-child{
     text-decoration: underline;
 }
+/* 요소의 마지막 자식 요소를 선택자로 지정한다 */
 ul>li:last-child{
     color: gray;
 }
 footer {
+    /* 요소를 공중에 띄워 다음에 오는 요소를 주변에 자연스럽게 배치할 수 있다 */
     float: right;
 }
 #list, #lorem{

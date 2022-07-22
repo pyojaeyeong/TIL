@@ -17,30 +17,60 @@
             }
             .red {
                 background-color: red;
-                position: relative;
+                /* position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); */
+
+                /* 먼저 박스를 top 50% left 50% 를 줘서 페이지 중앙으로 옮긴다
+                근데 박스 기준점이 왼쪽 위 모서리라 중심이라 하기 어렵다
+                transform 은 해당 요소의 모양, 위치, 회전까지 변환 시킬 수 있다
+                translate 는 해당 요소를 x축 y축 을 지정해 좌표를 옮길 수 있다
+                각각 -50%를 줘서 중앙으로 옮긴다 */
+
+                /* 이 방법은 IE8 이하 버전은 해당 속성을 사용할 수 없다 */
             }
             .green {
                 background-color: green;
                 position: absolute;
-                left: 50px;
-                right: 0;
-                top: 50px;
-                z-index: 1;
             }
             .blue {
                 background-color: blue;
-                position: absolute;
-                left: 100px;
-                right: 0;
-                top: 100px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-left: -50px;
+                margin-top: -50px;
+
+                /* 크로스 브라우징을 감안하여 적용
+                역시 top left 50%를 줘 중앙으로 옮긴다
+                해당 요소가 100px이면 margin을 각각 -50px씩 줘서 되돌린다
+                -50px 씩 옮기면 페이지 중앙으로 옮겨진다 */
+                
             }
         </style>
     </head>
     <body>
         <div class="container">
-        <div class="box red"></div>
-        <div class="box green"></div>
+        <!-- <div class="box red"></div>
+        <div class="box green"></div> -->
         <div class="box blue"></div>
       </div>
     </body>
 </html>
+
+<!-- static : 요소를 기본 흐름에 따라 배치한다
+기본값으로 아무 변화가 없고 좌표 지정을 할 수 없다
+
+relative : 요소를 기본 흐름에 따라 좌표 속성에 배치 할 수 있다
+
+absolute : 요소를 기본 흐름에서 벗어나 절대적인 좌표 위치에 따라 배치한다
+relative는 기준점이 요소의 왼쪽 위 모서리지만 absolute일때는 웹 브라우저의 왼쪽 위 모서리이다
+absolute 값일 때는 요소를 움직이면 요소가 원래 있던 공간은 빈 공간으로 인식된다
+
+fixed : absolute와 같이 요소를 기본 흐름에서 벗어나 절대적인 좌표 위치에 따라 배치한다
+단, 스크롤 해도 해당 위치에 고정되있다
+
+sticky : 스크롤 하는 중에 일정 지점이 되면 요소가 fixed 값처럼 작동한다
+
+z-index : position 속성으로 배치한 요소의 z축 위치를 결정할 수 있다 -->
