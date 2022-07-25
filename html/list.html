@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		li:nth-last-child(2n+2){
+			background-color: beige;
+		}
+		input:disabled{
+			background-color: aqua;
+		}
+		button:enabled{
+			background-color: red;
+		}
+		li::first-line{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>apple</li>
+		<li>banana</li>
+		<li>orange</li>
+		<li>watermelon</li>
+		<li>grape</li>
+	</ul>
+	<ul>
+		<li role="checkbox" aria-checked="true">체크</li>
+	</ul>
+	<input type="text" disabled>
+	<button>버튼</button>
+	
+</body>
+</html>

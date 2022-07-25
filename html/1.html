@@ -20,6 +20,7 @@
             .box {
                 width: 100px;
                 height: 100px;
+								transition: width, 1s, ease-out, 5s;
             }
             .red {
                 background-color: red;
@@ -30,7 +31,10 @@
                 float: left;
             }
             .red:hover{
-              background-color: beige;
+              width: 200px;
+							background-color: beige;
+              transition-property: background-color;
+              transition-duration: 2s;
             }
             .red:active{
               background-color: black;
@@ -38,8 +42,6 @@
             .blue {
                 background-color: blue;
                 clear: left;
-                transition-property: background-color;
-                transition-duration: 5s;
             }
         </style>
     </head>

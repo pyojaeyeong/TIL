@@ -4,25 +4,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>애니메이션 속성으로 전환 효과</title>
 	<style>
 		.box{
 			width: 100px;
 			height: 100px;
-			border-top: 5px solid red;
-			border-bottom: 10px solid red;
-			border-right: 10px solid red;
-			border-left: 20px solid red;
-			margin: 10px 20px;
-			padding: 10px 20px;
+			background-color: red;
+			animation-name: bgChange;
+			animation-duration: 5s;
 		}
-		.red{
-			background-color: royalblue;
+		@keyframes bgChange {
+			0%{
+				background-color: blue;
+			}
+			100%{
+				background-color: orange;
+			}
 		}
-
 	</style>
 </head>
 <body>
-	<div class="box red"></div>
+	<div class="box"></div>
 </body>
 </html>
