@@ -7,18 +7,29 @@
 	<title>애니메이션 속성으로 전환 효과</title>
 	<style>
 		.box{
-			width: 100px;
-			height: 100px;
-			background-color: red;
-			animation-name: bgChange;
-			animation-duration: 5s;
+			width: 300px;
+			height: 300px;
+			background-color: black;
+			animation: bgChange 5s both infinite alternate;
+		}
+		.box:hover{
+			animation-play-state: paused;
 		}
 		@keyframes bgChange {
 			0%{
-				background-color: blue;
+				background-color: red;
+			}
+			25%{
+				background-color: orange;
+			}
+			50%{
+				background-color: yellow;
+			}
+			75%{
+				background-color: green;
 			}
 			100%{
-				background-color: orange;
+				background-color: blue;
 			}
 		}
 	</style>

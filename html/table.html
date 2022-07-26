@@ -6,8 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>테이블</title>
 	<style>
+		table{
+			border-collapse: collapse;
+		}
 		tr :nth-last-child(1){
 			color: blue;
+		}
+		th, tr, td{
+			border:1px solid black;
 		}
 	</style>
 
@@ -16,33 +22,33 @@
   <table>
     <caption>가격표</caption>
 		<col style="width: 80px;">
-		<colgroup style="width: 150px;"></colgroup>
+		<colgroup span="2" style="width: 150px;"></colgroup>
 		<col style="width: 100px">
     <tr>
-      <th>번호</th>
-      <th>상품명</th>
-      <th>수량</th>
-      <th>가격</th>
+      <th scope="col">번호</th>
+      <th scope="col">상품명</th>
+      <th scope="col">수량</th>
+      <th scope="col">가격</th>
     </tr>
     <tr>
-      <td>1</td>
+      <th scope="row">1</th>
       <td>콜라</td>
       <td>1개</td>
       <td>1,500원</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th scope="row">2</th>
       <td>사이다</td>
       <td>2개</td>
 			<td rowspan="2">1,000원</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th scope="row">3</th>
       <td>탄산수</td>
       <td>3개</td>
     </tr>
     <tr>
-      <td>총 금액</td>
+      <th scope="row">총 금액</th>
       <td colspan="3">6,500원</td>
     </tr>
   </table>

@@ -6,22 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		li:nth-last-child(2n+2){
+		li:nth-last-of-type(2n+1){
 			background-color: beige;
 		}
-		input:disabled{
-			background-color: aqua;
-		}
-		button:enabled{
-			background-color: red;
-		}
-		li::first-line{
+		li::first-letter{
 			color: green;
 		}
 	</style>
 </head>
 <body>
 	<ul>
+		<li>first</li>
+		<li>second</li>
+		<li>third</li>
 		<li>apple</li>
 		<li>banana</li>
 		<li>orange</li>
@@ -29,10 +26,6 @@
 		<li>grape</li>
 	</ul>
 	<ul>
-		<li role="checkbox" aria-checked="true">체크</li>
-	</ul>
-	<input type="text" disabled>
-	<button>버튼</button>
 	
 </body>
 </html>
