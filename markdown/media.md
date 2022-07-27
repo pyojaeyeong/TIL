@@ -1,15 +1,5 @@
 반응형 웹 - 미디어 쿼리
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-width=device-width는 HTML문서의 너비(width)를 기기의 너비(device-width)로 설정하라는 의미
-
-width | 뷰포트의 너비를 설정. 보통 device-width로 설정
-height | 뷰포트의 높이를 설정
-initial-scale | 뷰포트의 초기 배율을 설정. 1이 기본값이며 1보다 작으면 축소 값. 1보다 크면 확대값으로 설정
-minimun-scale | 뷰포트의 최소 축소 비율을 설정. 기본으로 0.25으로 적용되있다
-maximum-scale | 뷰포트의 최대 확대 비율을 설정. 기본으로 5.0으로 적용되있다
-user-scalable | 뷰포트의 확대 또는 축소 여부를 설정. yes or no
-
 기본 문법
 @media <not|only> <mediatype> and (<media feature>) <and|or|not> (<media feature>) {}
 

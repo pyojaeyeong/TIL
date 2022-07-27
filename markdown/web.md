@@ -41,13 +41,9 @@ CSS 첫 코드를 @charset "utf-8";
 
 표준 규칙
 
-HTML 
-
-lang 속성 : 검색 엔진이 웹 페이지를 탐색할 때 해당 웹 페이지가 어떠한 언어로 만들어져 있는지 쉽게 인식하게 만듬
-
 viewport
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
 width : 뷰포트의 너비를 설정 [device-width]
 

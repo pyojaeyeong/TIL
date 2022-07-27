@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Ubuntu&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			font-family: 'Josefin Sans', sans-serif;
+			font-family: 'Ubuntu', sans-serif;
+		}
+		#login{
+			width: 304px;
+			height: 390px;
+			padding: 28px 38px;
+			border: 1px solid #000;
+			margin: 100px auto;
+		}
+		#login fieldset{
+			border: none;
+		}
+		#login fieldset legend{
+			position: absolute;
+			top: -99999px;	
+		}
+		#login button{
+			width: 228px;
+			height: 44px;
+			border: 1px solid #000;
+			background-color: white;
+			font-weight: bold;
+		}
+		#login input{
+			width: 228px;
+			height: 44px;
+			border: 1px solid #000;
+			padding: 0 10px;
+			margin-bottom: 21px;
+			background-color: #eaeaea;
+		}
+		#login > fieldset{
+			margin: 24px 0;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+		}
+		#login button[type='submit']{
+			background-color: #373f3c;
+			color: white;
+			margin-bottom: 27px;
+			font-weight: normal;
+		}
+		#login a{
+			text-decoration: none;
+			color: #2c3432;
+			font-size: 14px;
+			text-align: center;
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<form action="#" id="login">
+			<fieldset>
+				<legend></legend>
+				<p>log in with Google</p>
+				<p>or</p>
+				<p>
+					<label for="userid"></label>
+					<input
+					 type="text" 
+					 id="userid" 
+					 name="userid"
+					 placeholder="User name">
+				</p>
+				<p>
+					<label for="passwd"></label>
+					<input 
+					type="password" 
+					id="passwd" 
+					name="passwd"
+					placeholder="Password">
+				</p>
+				<button type="submit">LOGIN</button>
+				<a href="#">Forgot your password?</a>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

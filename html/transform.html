@@ -6,19 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+		.container{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
 		.container .bar{
-			width: 10px;
+			width: 100px;
 			transition-property: width;
 			transition-duration: 5s;
 		}
 		.container:hover .bar{
-			width: 110px;
+			width: 200px;
 		}
 		.bar{
 			width: 100px;
-			background-color: beige;
-			line-height: 3;
-			padding: 10px 20px;
+			background-color: powderblue;
+			border: 1px solid black;
 		}
 		.bar:nth-child(1){
 			transition-timing-function: linear;
@@ -34,8 +39,6 @@
 		}
 		.bar:nth-child(5){
 			transition-timing-function: ease-in-out;
-			padding: 10px 20px;
-			
 		}
 	</style>
 </head>
