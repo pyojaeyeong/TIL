@@ -1,7 +1,7 @@
 플렉스 박스 레이아웃
 
 ## 구성요소
-* 주축(main axis6) : 플렉스 박스의 진행 방향과 수평한 축
+* 주축(main axis) : 플렉스 박스의 진행 방향과 수평한 축
 * 교차축(cross axis) : 주축과 수직한 축
 * 플렉스 컨테이너(flex container) : display 속성값으로 flex나 inline-flex가 적용된 요소
 * 플렉스 아이템(flex item) : 플렉스 컨테이너와 자식 관계를 이루는 태그 구성 요소
@@ -37,7 +37,7 @@ wrap-reverse : 플렉스 아이템이 플렉스 컨테이너를 벗어나면 wra
 
 ## 플렉스 박스 레이아웃 정렬 속성
 
-### justify-content 속성
+### justify-content 속성 - 주축 방향으로 정렬
 
 형식 - justify-content:<속성값>;
 
