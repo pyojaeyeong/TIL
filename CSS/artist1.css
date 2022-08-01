@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 *{
 	margin: 0;
@@ -17,7 +17,7 @@ html{
 	font-family: 'Josefin Sans', sans-serif;
 	font-family: 'Ubuntu', sans-serif;
 }
-.inner_con{
+body{
 	width: 1140px;
 	margin: 0 auto;
 }
@@ -37,13 +37,49 @@ html{
 	z-index: 1;
 }
 .img_section{
-	margin-bottom: 7%;
 	position: relative;
-	left: 30%;
+	margin-bottom: 7%;
 }
 a:hover{
 	text-decoration: underline;
 }
+.artist_img_box.h_photo{
+	margin-left: 460px;
+	width: 465px;
+}
+@media screen and (max-width: 1140px){
+	.artist_img_box.h_photo{
+    width: 325px;
+}
 img{
-	width: 35%;
+	border-style: none;
+}
+@media screen and (max-width: 1140px){
+	.artist_img_box.mg_03{
+  margin-left: 390px;
+}
+section::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+	.artist_img_box > img {
+	width: 100%;
+}
+	.mg_03{
+	margin-left: 564px;
+}
+@media screen and (max-width: 1140px){
+	.artist_img_box .mg_02 {
+    margin-left: 260px;
+}
+	.artist_img_box .mg_02 {
+	margin-left: 408px;
+}
+@media screen and (max-width: 1440px){
+	.mg_01 {
+    margin-left: 130px;
+}
+	.mg_01 {
+	margin-left: 192px;
 }
