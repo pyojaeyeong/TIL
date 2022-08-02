@@ -6,3 +6,9 @@ file
 
 artist.html
 artist1.css
+
+22-08-02
+미디어 쿼리 추가
+
+artist.html
+artist1.css
