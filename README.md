@@ -1,14 +1,9 @@
 # TIL
-2022-08-01
-페이지 카피한 후 구현
+2022-08-03
 
-file
+artist1.html, artist2.css
 
-artist.html
-artist1.css
-
-22-08-02
-미디어 쿼리 추가
-
-artist.html
-artist1.css
+전면 수정
+1. 미디어 쿼리 x
+2. gnb 삽입
+3. css코드 수정
